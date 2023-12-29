@@ -1,7 +1,7 @@
 def call (def giturl, def branch) {
   echo ""
-  echo "---------- Git URL: $(giturl) ----------
-  echo "---------- Git URL: $(branch) ----------
+  echo "---------- Git URL: $(giturl) ----------"
+  echo "---------- Git URL: $(branch) ----------"
   echo ""
   if (giturl.contains("github.com"))
   {
