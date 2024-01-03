@@ -3,7 +3,7 @@ def call (def giturl, def branch) {
   sh "echo ---------- Git URL: ${branch} ----------"
   if (giturl.contains("github.com"))
   {
-  checkout ([$class: 'GitSCM', branches: [[name: 'branch']], extensions: [], userRemoteConfigs: [[url: 'giturl']]]) 
+  checkout ([$class: 'GitSCM', branches: [[name: branch]], extensions: [], userRemoteConfigs: [[url: giturl]]]) 
   }
   else 
   {
